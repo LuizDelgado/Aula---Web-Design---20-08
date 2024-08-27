@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <!-- É A PRIMEIRA COISA QUE CARREGA NA PÁGINA! -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha página HTML</title>
+    <style>
+        body, h1, h2, p, ul, ol, li, table, th, td, header, section, footer{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header{
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            background-color: #333;
+            text-align: center;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        nav ul li{
+            display: inline;
+        }
+        nav ul li a{
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+
+        section {
+            margin-top: 20px;
+            padding: 20px;
+            background: white;
+            border: 1px solid #ccc;
+        }
+
+        table{
+            width: 100%;
+            margin-top:20px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th{
+            background-color: #007bff;
+            color: #fff;
+        }
+        form{
+            margin-top: 20px;
+        }
+        label{
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea{
+            width: 98%;
+            padding: 10px;
+            margin-bottom: 10px;
+
+        }
+        button{
+            padding: 10px 20px;
+            background-color:#007bff;
+            color:white;
+            border: none;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background-color: #0056b3;
+        }
+        
+        footer{
+            background-color: #333;
+            color:white;
+            text-align: center;
+            padding: 5px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo a minha página HTML!</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">Sobre</a>
+                </li>
+                <li>
+                    <a href="">Galeria</a>
+                </li>
+                <li>
+                    <a href="">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <p>Olá! Eu sou o professor de Web Design!</p>
+            <hr>
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria</h2>
+            <img src="https://via.placeholder.com/150" alt="Imagem Exemplo">
+        </section>
+
+        <section id="tabela">
+            <H2>Tabela de horários</H2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                        <th>Atividades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda-feira</td>
+                        <td>09:00 - 11:00</td>
+                        <td>Aula de HTML</td>
+                    </tr>
+                    <tr>
+                        <td>Terça-feira</td>
+                        <td>10:00 - 12:00</td>
+                        <td>Natação</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome">
+
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email">
+
+                <label for="mensagem">Mensagem: </label>
+                <textarea name="mensagem" id="mensagem"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
